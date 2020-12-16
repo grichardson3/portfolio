@@ -1,0 +1,93 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0 auto;
+  background: rgb(20, 89, 175);
+  background: radial-gradient(
+    circle,
+    rgba(20, 89, 175, 1) 50%,
+    rgb(19, 79, 153) 100%
+  );
+}
+
+#splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+  text-rendering: optimizeSpeed;
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: 900;
+  line-height: 0.525em;
+  margin: 0;
+  text-align: center;
+  user-select: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+#topText {
+  font-size: 1em;
+}
+
+#bottomText {
+  font-size: 0.625em;
+}
+
+#buttonContainer {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+#proceedButton {
+  background-color: white;
+  border-radius: 20px;
+  color: rgb(20, 89, 175);
+  display: flex;
+  font-family: "Roboto Slab", serif;
+  font-size: 1px;
+  font-weight: 700;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 0;
+  text-rendering: optimizeSpeed;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 200px;
+}
+
+@media screen and (max-width: 959px) {
+  .title {
+    font-size: 9em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .title {
+    font-size: 6em;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .title {
+    font-size: 13em;
+  }
+}
